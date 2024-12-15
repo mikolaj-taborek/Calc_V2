@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Mikołaj Taborek">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>CalculatorV2</title>
+</head>
+<body>
+    <div id="ResultContainer">
+        <label id="WorkBox"></label>
+        <label id="OpBox"></label>
+    </div>
+    <div id="HighestContainer">
+        <div id="LeftContainer">
+            <button class="FunButton" type="button" onclick="deleteNum()">del</button>
+            <button class="FunButton" type="button">+/-</button>
+            <button class="FunButton" type="button" onclick="modulo()">%</button><br>
+            <button class="NumsButton" type="button">7</button>
+            <button class="NumsButton" type="button">8</button>
+            <button class="NumsButton" type="button">9</button><br>
+            <button class="NumsButton" type="button">4</button>
+            <button class="NumsButton" type="button">5</button>
+            <button class="NumsButton" type="button">6</button><br>
+            <button class="NumsButton" type="button">3</button>
+            <button class="NumsButton" type="button">2</button>
+            <button class="NumsButton" type="button">1</button><br>
+            <button class="NumsButton" id="HistoryButton" type="button" onclick="showHistory()">🖩</button>
+            <button class="NumsButton" type="button">0</button>
+            <button class="NumsButton" type="button">,</button>
+        </div>
+        <div id="RightContainer">
+            <button class="OpButton" type="button">/</button><br>
+            <button class="OpButton" type="button">*</button><br>
+            <button class="OpButton" type="button">-</button><br>
+            <button class="OpButton" type="button">+</button><br>
+            <button class="OpButton" type="button" onclick="calcNums()">=</button>
+        </div>
+    </div>
+    <div id="HistoryContainer">
+        
+    </div>
+</body>
+</html>
